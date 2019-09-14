@@ -12,7 +12,8 @@ public class ForegroundService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+//        throw new UnsupportedOperationException("Not yet implemented");
+        throw null;
     }
 
     @Override
@@ -30,7 +31,7 @@ public class ForegroundService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this,"Service Created",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Service Destroyed",Toast.LENGTH_SHORT).show();
 
     }
 }
